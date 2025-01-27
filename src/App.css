@@ -1,0 +1,29 @@
+.barraSuperior {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0px;
+    margin-top: 0px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+}
+
+.categoriasTienda {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 100px;
+}
+
+.carritoDeCompras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
