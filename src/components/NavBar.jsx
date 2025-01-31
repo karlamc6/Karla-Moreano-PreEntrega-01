@@ -1,4 +1,4 @@
-import logo from '../imagenes/CORDOVA IMPORTACIONES.PNG'
+import logo from '../imagenes/cordova-importaciones.png'
 import CartWidget from './CartWidget'
 
 function NavBar () {
