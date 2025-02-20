@@ -1,14 +1,23 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer'
+import Counter from './components/Counter'
+import { BrowserRouter, Routes, Route } from "react-router"
+import DetalleItemContainer from './components/DetalleItemContainer'
+
 
 
 function App() {
   return (
-    <div>
-      <NavBar /> 
-      <ItemListContainer aviso='En los proximos días estaremos abriendo la tienda online, los esperamos!'/>
-    </div>
+    <BrowserRouter>
+    <NavBar />
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:id" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<DetalleItemContainer />} />
+        <Route path="*" element={<div>La pagina a la que intentas ingresar no existe.</div>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

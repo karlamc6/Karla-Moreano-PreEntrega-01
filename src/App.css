@@ -5,11 +5,10 @@
     align-items: center;
     align-content: center;
     flex-wrap: nowrap;
-    position: sticky;
     top: 0px;
     margin-top: 0px;
     margin-right: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #b9bfc0;
 }
 
 .categoriasTienda {
@@ -27,3 +26,4 @@
     flex-wrap: nowrap;
     gap: 5px;
 }
+
