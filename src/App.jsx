@@ -1,9 +1,10 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer'
-import Counter from './components/Counter'
+import ItemCount from './components/ItemCount'
 import { BrowserRouter, Routes, Route } from "react-router"
-import DetalleItemContainer from './components/DetalleItemContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import CartContainer from './components/CartContainer'
 
 
 
@@ -14,7 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:id" element={<ItemListContainer />} />
-        <Route path="/item/:id" element={<DetalleItemContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+        <Route path="/Cart" element={<CartContainer />} />
         <Route path="*" element={<div>La pagina a la que intentas ingresar no existe.</div>} />
       </Routes>
     </BrowserRouter>
@@ -22,4 +24,4 @@ function App() {
 }
 
 export default App
-///a Counter le pasamos el valor que seria "initial" 
+
